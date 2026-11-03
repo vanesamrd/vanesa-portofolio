@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEco" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="50%" stop-color="#065F46"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+    <linearGradient id="ecoCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#022C22" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgEco)"/>
+
+  <!-- Main Container Card -->
+  <rect x="40" y="30" width="720" height="390" rx="14" fill="#022C22" stroke="#059669" stroke-width="1.5"/>
+
+  <!-- Top bar -->
+  <rect x="40" y="30" width="720" height="48" rx="14" fill="#064E3B"/>
+  <circle cx="70" cy="54" r="14" fill="#10B981"/>
+  <text x="63" y="60" fill="#FFFFFF" font-size="14">🌱</text>
+  <text x="95" y="60" fill="#FFFFFF" font-size="15" font-weight="bold" font-family="sans-serif">EcoCare - Recycle &amp; Reward</text>
+  
+  <rect x="580" y="42" width="160" height="26" rx="13" fill="#047857"/>
+  <text x="595" y="59" fill="#A7F3D0" font-size="11" font-weight="600" font-family="sans-serif">🪙 2.450 EcoPoints</text>
+
+  <!-- Left: Interactive Pickup Map Simulation -->
+  <g transform="translate(56, 95)">
+    <rect width="420" height="305" rx="8" fill="#064E3B" stroke="#059669"/>
+    
+    <!-- Stylized Map Roads -->
+    <path d="M 20 50 Q 180 80 250 20 T 400 120" stroke="#047857" stroke-width="8" fill="none"/>
+    <path d="M 80 280 L 140 160 L 320 180 L 380 40" stroke="#047857" stroke-width="12" fill="none"/>
+    <path d="M 220 280 L 220 40" stroke="#047857" stroke-width="6" fill="none"/>
+    <path d="M 40 180 L 390 180" stroke="#047857" stroke-width="8" fill="none"/>
+
+    <!-- Map Pins (Drop points) -->
+    <!-- Pin 1 -->
+    <circle cx="140" cy="160" r="14" fill="#10B981" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="135" y="165" fill="#FFF" font-size="12">♻️</text>
+    <rect x="100" y="125" width="85" height="20" rx="4" fill="#022C22"/>
+    <text x="106" y="139" fill="#6EE7B7" font-size="9" font-family="sans-serif">Bank Sampah A</text>
+
+    <!-- Pin 2 (Pickup in progress) -->
+    <circle cx="280" cy="180" r="14" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="274" y="185" fill="#FFF" font-size="12">🚛</text>
+    <rect x="245" y="145" width="80" height="20" rx="4" fill="#022C22"/>
+    <text x="252" y="159" fill="#93C5FD" font-size="9" font-family="sans-serif">Kurir OTW (12m)</text>
+
+    <!-- Pin 3 (User home) -->
+    <circle cx="340" cy="80" r="14" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="334" y="85" fill="#FFF" font-size="12">🏠</text>
+    <rect x="305" y="45" width="75" height="20" rx="4" fill="#022C22"/>
+    <text x="312" y="59" fill="#FDE68A" font-size="9" font-family="sans-serif">Lokasi Jemput</text>
+  </g>
+
+  <!-- Right: Pickup Scheduler & Points Exchange -->
+  <g transform="translate(492, 95)">
+    <rect width="250" height="305" rx="8" fill="#064E3B" stroke="#059669"/>
+    
+    <text x="16" y="28" fill="#F8FAFC" font-size="13" font-weight="bold" font-family="sans-serif">Jadwalkan Penjemputan</text>
+    
+    <!-- Item 1: Plastic -->
+    <rect x="14" y="44" width="222" height="48" rx="6" fill="#022C22"/>
+    <text x="26" y="73" fill="#6EE7B7" font-size="16">🧴</text>
+    <text x="50" y="64" fill="#F3F4F6" font-size="11" font-weight="600" font-family="sans-serif">Botol Plastik PET</text>
+    <text x="50" y="79" fill="#A7F3D0" font-size="10" font-family="sans-serif">Est: 3.5 kg · +350 Poin</text>
+
+    <!-- Item 2: Paper/Cardboard -->
+    <rect x="14" y="100" width="222" height="48" rx="6" fill="#022C22"/>
+    <text x="26" y="129" fill="#F59E0B" font-size="16">📦</text>
+    <text x="50" y="120" fill="#F3F4F6" font-size="11" font-weight="600" font-family="sans-serif">Kardus &amp; Kertas</text>
+    <text x="50" y="135" fill="#A7F3D0" font-size="10" font-family="sans-serif">Est: 8.0 kg · +480 Poin</text>
+
+    <!-- Date selector -->
+    <rect x="14" y="158" width="222" height="36" rx="6" fill="#022C22" stroke="#047857"/>
+    <text x="26" y="180" fill="#E2E8F0" font-size="11" font-family="sans-serif">📅 Besok, 09:00 - 11:00 WIB</text>
+
+    <!-- Total Points Badge -->
+    <rect x="14" y="204" width="222" height="40" rx="6" fill="#047857"/>
+    <text x="26" y="228" fill="#FFFFFF" font-size="11" font-family="sans-serif">Potensi Reward:</text>
+    <text x="145" y="228" fill="#FDE68A" font-size="12" font-weight="bold" font-family="sans-serif">+830 Poin</text>
+
+    <!-- CTA Button -->
+    <rect x="14" y="254" width="222" height="36" rx="6" fill="#10B981"/>
+    <text x="55" y="277" fill="#022C22" font-size="12" font-weight="bold" font-family="sans-serif">Konfirmasi Jemput Sekarang</text>
+  </g>
+</svg>

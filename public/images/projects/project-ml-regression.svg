@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgReg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgReg)"/>
+
+  <!-- Colab Header Mockup -->
+  <rect x="40" y="24" width="720" height="402" rx="14" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Colab Top Bar -->
+  <rect x="40" y="24" width="720" height="46" rx="14" fill="#020617"/>
+  <!-- Colab Icon -->
+  <circle cx="68" cy="47" r="13" fill="#F9AB00" fill-opacity="0.2"/>
+  <text x="60" y="52" fill="#F9AB00" font-size="14" font-weight="bold">∞</text>
+  <text x="90" y="52" fill="#FFFFFF" font-size="13" font-weight="bold" font-family="sans-serif">Google Colab · sales_demand_regression.ipynb</text>
+  
+  <!-- Colab RAM/Disk Badge -->
+  <rect x="535" y="34" width="105" height="26" rx="6" fill="#1E293B"/>
+  <text x="546" y="51" fill="#34D399" font-size="10" font-mono font-family="sans-serif">● RAM: 2.1 GB</text>
+  <rect x="650" y="34" width="95" height="26" rx="6" fill="#F97316" fill-opacity="0.2" stroke="#EA580C"/>
+  <text x="660" y="51" fill="#FB923C" font-size="10" font-weight="600" font-family="sans-serif">Colab Python 3</text>
+
+  <!-- Left: Regression Scatter Plot & Trend Line -->
+  <g transform="translate(60, 85)">
+    <rect width="430" height="325" rx="10" fill="#111827" stroke="#1F2937"/>
+    
+    <text x="16" y="28" fill="#F8FAFC" font-size="13" font-weight="bold" font-family="sans-serif">Linear &amp; Random Forest Regression Fit</text>
+    <text x="16" y="44" fill="#94A3B8" font-size="10" font-family="sans-serif">Prediksi Kuantitas Penjualan Aktual vs Nilai Prediksi Model</text>
+
+    <!-- Axes -->
+    <line x1="50" y1="280" x2="400" y2="280" stroke="#475569" stroke-width="1.5"/>
+    <line x1="50" y1="280" x2="50" y2="60" stroke="#475569" stroke-width="1.5"/>
+    <text x="320" y="298" fill="#94A3B8" font-size="10" font-family="sans-serif">Kuantitas Aktual</text>
+    <text x="20" y="70" fill="#94A3B8" font-size="10" font-family="sans-serif" transform="rotate(-90 20,70)">Estimasi Prediksi</text>
+
+    <!-- Grid lines -->
+    <line x1="50" y1="225" x2="400" y2="225" stroke="#1E293B" stroke-dasharray="3 3"/>
+    <line x1="50" y1="170" x2="400" y2="170" stroke="#1E293B" stroke-dasharray="3 3"/>
+    <line x1="50" y1="115" x2="400" y2="115" stroke="#1E293B" stroke-dasharray="3 3"/>
+
+    <!-- Best Fit Regression Line -->
+    <line x1="60" y1="270" x2="390" y2="75" stroke="url(#lineGrad)" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Residual error lines & Scatter data points -->
+    <!-- Point 1 -->
+    <line x1="100" y1="245" x2="100" y2="230" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="100" cy="230" r="5" fill="#38BDF8"/>
+    
+    <!-- Point 2 -->
+    <line x1="145" y1="220" x2="145" y2="210" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="145" cy="210" r="5.5" fill="#38BDF8"/>
+
+    <!-- Point 3 -->
+    <line x1="180" y1="198" x2="180" y2="215" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="180" cy="215" r="6" fill="#38BDF8"/>
+
+    <!-- Point 4 -->
+    <line x1="220" y1="175" x2="220" y2="165" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="220" cy="165" r="5" fill="#38BDF8"/>
+
+    <!-- Point 5 -->
+    <line x1="260" y1="152" x2="260" y2="158" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="260" cy="158" r="6.5" fill="#38BDF8"/>
+
+    <!-- Point 6 -->
+    <line x1="300" y1="128" x2="300" y2="118" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="300" cy="118" r="6" fill="#38BDF8"/>
+
+    <!-- Point 7 -->
+    <line x1="340" y1="105" x2="340" y2="112" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="340" cy="112" r="5" fill="#38BDF8"/>
+
+    <!-- Point 8 -->
+    <line x1="375" y1="84" x2="375" y2="76" stroke="#EC4899" stroke-width="1" stroke-dasharray="2 2"/>
+    <circle cx="375" cy="76" r="6.5" fill="#38BDF8"/>
+
+    <!-- Formula tag -->
+    <rect x="235" y="240" width="160" height="26" rx="6" fill="#1E293B" stroke="#475569"/>
+    <text x="245" y="257" fill="#F472B6" font-size="10" font-family="monospace">y = 0.88x + 4.12 (R² = 0.912)</text>
+  </g>
+
+  <!-- Right: Metrics & Feature Importance -->
+  <g transform="translate(505, 85)">
+    <rect width="235" height="325" rx="10" fill="#111827" stroke="#1F2937"/>
+    
+    <text x="16" y="28" fill="#F8FAFC" font-size="13" font-weight="bold" font-family="sans-serif">Evaluasi Model Regresi</text>
+
+    <!-- Score 1: R-squared -->
+    <rect x="14" y="42" width="207" height="60" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1.2"/>
+    <text x="24" y="62" fill="#94A3B8" font-size="10" font-family="sans-serif">Koefisien Determinasi (R²)</text>
+    <text x="24" y="88" fill="#10B981" font-size="20" font-weight="bold" font-family="sans-serif">0.912</text>
+    <text x="95" y="86" fill="#A7F3D0" font-size="10" font-family="sans-serif">(91.2% Akurasi)</text>
+
+    <!-- Score 2: Error metrics -->
+    <g transform="translate(14, 110)">
+      <rect width="100" height="48" rx="6" fill="#1E293B" stroke="#374151"/>
+      <text x="10" y="20" fill="#94A3B8" font-size="9" font-family="sans-serif">RMSE Error</text>
+      <text x="10" y="38" fill="#38BDF8" font-size="13" font-weight="bold" font-family="sans-serif">14.8 Unit</text>
+
+      <rect x="107" y="0" width="100" height="48" rx="6" fill="#1E293B" stroke="#374151"/>
+      <text x="117" y="20" fill="#94A3B8" font-size="9" font-family="sans-serif">MAE Error</text>
+      <text x="117" y="38" fill="#F59E0B" font-size="13" font-weight="bold" font-family="sans-serif">9.4 Unit</text>
+    </g>
+
+    <!-- Feature Importance Ranking -->
+    <text x="16" y="180" fill="#F8FAFC" font-size="11" font-weight="bold" font-family="sans-serif">Fitur Prediktor Terkuat:</text>
+
+    <!-- Feat 1 -->
+    <g transform="translate(14, 192)">
+      <text x="0" y="12" fill="#E2E8F0" font-size="10" font-family="sans-serif">Moving Average 7 Hari</text>
+      <rect x="0" y="18" width="207" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="18" width="170" height="6" rx="3" fill="#EC4899"/>
+    </g>
+
+    <!-- Feat 2 -->
+    <g transform="translate(14, 226)">
+      <text x="0" y="12" fill="#E2E8F0" font-size="10" font-family="sans-serif">Efek Hari Libur / Weekend</text>
+      <rect x="0" y="18" width="207" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="18" width="135" height="6" rx="3" fill="#8B5CF6"/>
+    </g>
+
+    <!-- Feat 3 -->
+    <g transform="translate(14, 260)">
+      <text x="0" y="12" fill="#E2E8F0" font-size="10" font-family="sans-serif">Tren Momentum 30 Hari</text>
+      <rect x="0" y="18" width="207" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="18" width="95" height="6" rx="3" fill="#06B6D4"/>
+    </g>
+
+    <text x="16" y="310" fill="#94A3B8" font-size="9" font-family="sans-serif">✓ Siap diintegrasikan ke API Laravel</text>
+  </g>
+</svg>
