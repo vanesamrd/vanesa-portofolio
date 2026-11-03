@@ -1,0 +1,8 @@
+# Netlify hosts this Laravel portfolio as a static site: the Blade page is
+# rendered to plain HTML at build time (no PHP runs at request time).
+[build]
+  command = "composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader && php scripts/build-static.php"
+  publish = "dist"
+
+[build.environment]
+  PHP_VERSION = "8.3"
