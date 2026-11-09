@@ -183,7 +183,7 @@ class PortfolioController extends Controller
                     'Hasil model diekspor untuk dapat diintegrasikan dengan backend API Laravel & Node.js untuk kalkulasi otomatis stok minimum.',
                 ],
                 'repo_link' => 'https://github.com/vanesamrd',
-                'demo_link' => null,
+                'demo_link' => 'https://colab.research.google.com/drive/172bBqPlOp6NhMvlh1aOybjBGCxIABzGV',
                 'featured' => true,
             ],
 
