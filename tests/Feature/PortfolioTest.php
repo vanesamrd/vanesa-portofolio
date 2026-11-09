@@ -28,7 +28,7 @@ class PortfolioTest extends TestCase
         $response->assertSee('Google Colab');
         $response->assertSee('Figma');
         $response->assertSee('KopiKita');
-        $response->assertSee('EduPortal');
+        $response->assertSee('SiGizi');
         $response->assertSee('EcoCare');
         $response->assertSee('HealthEase');
         $response->assertSee('FinVibe');

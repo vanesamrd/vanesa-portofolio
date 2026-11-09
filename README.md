@@ -26,9 +26,8 @@ Website portofolio modern yang dibangun menggunakan **Framework Laravel**, menam
      - Berdasarkan analisis 53.820 struk transaksi kasir aktual di 3 cabang outlet.
      - Komparasi 7 model klaster: K-Means (Euclidean, Manhattan, Cosine), DBSCAN (Euclidean, Manhattan, Cosine), dan HDBSCAN dengan evaluasi metrik Silhouette & Davies-Bouldin.
    - **Web Development**:
-     - *KopiKita - Point of Sale (POS) & Smart Inventory Web App* (Laravel 11/13, PHP 8, MySQL, Tailwind CSS, Alpine.js)
-     - *EduPortal - Sistem Informasi Manajemen Akademik Kampus* (Laravel, Bootstrap 5, MySQL, Role Auth)
-     - *EcoCare - Platform Donasi & Penjemputan Sampah Daur Ulang* (Laravel REST API, Leaflet.js)
+      - *EcoCare - Platform Penjemputan Sampah Daur Ulang & Reward* (Laravel 12, Node.js Telemetry, MySQL, Leaflet.js, Tailwind CSS)
+      - *SiGizi - Sistem Informasi Pemantauan Gizi & Stunting Balita* (Laravel 13, Livewire, Gemini AI, DomPDF, Tailwind CSS)
    - **UI/UX Design**:
      - *KopiKita Mobile - Quick Order & Digital Loyalty App UX Case Study* (Figma, SUS Score 87.5 / Grade A)
      - *HealthEase - Telemedicine & Senior-Friendly Healthcare Mobile App* (WCAG 2.1 AA Accessibility)
