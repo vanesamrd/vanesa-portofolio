@@ -212,7 +212,7 @@ class PortfolioController extends Controller
                     'Bonus 500 EcoPoints untuk pengguna baru dan 1-click demo login untuk pengujian instan tiap role.',
                 ],
                 'repo_link' => 'https://github.com/vanesamrd',
-                'demo_link' => 'http://127.0.0.1:8000/#peta',
+                'demo_link' => 'https://ecocare-three.vercel.app/#peta',
                 'featured' => true,
             ],
 
@@ -241,7 +241,7 @@ class PortfolioController extends Controller
                     'Ekspor laporan & rujukan ke PDF menggunakan barryvdh/laravel-dompdf.',
                 ],
                 'repo_link' => 'https://github.com/vanesamrd/SiGizi-OLIVIA26',
-                'demo_link' => 'https://ais-dev-udwz6k3mlnzgg6hfzu42g4-829960772034.asia-southeast1.run.app/',
+                'demo_link' => 'https://sigizi-olivia.vercel.app',
                 'featured' => false,
             ],
 
