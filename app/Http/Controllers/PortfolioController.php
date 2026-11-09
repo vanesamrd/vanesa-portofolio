@@ -166,7 +166,7 @@ class PortfolioController extends Controller
                 'badge' => 'Featured ML Regression Project',
                 'short_desc' => 'Pemodelan Machine Learning berbasis Regresi (Linear & Random Forest Regressor) yang dikembangkan di Google Colab untuk memprediksi kuantitas penjualan harian dan estimasi restock bahan baku secara akurat.',
                 'full_desc' => 'Mengembangkan pipeline machine learning prediktif berbasis Regresi menggunakan Python di Google Colab. Proyek ini melatih model untuk memprediksi volume penjualan harian produk kedai kopi berdasarkan fitur riwayat transaksi (53.820 struk), efek akhir pekan (weekend effect), moving average 7 hari, dan harga satuan. Model terbaik (Random Forest Regressor) mencapai skor R² sebesar 0.912 dengan Mean Absolute Error (MAE) yang sangat rendah, membantu mencegah understocking maupun penumpukan bahan baku (waste).',
-                'image' => '/images/projects/project-ml-regression.svg',
+                'image' => '/images/projects/project-ml-regression.png',
                 'tags' => ['Python', 'Google Colab', 'Scikit-Learn', 'Linear Regression', 'Random Forest Regressor', 'Pandas', 'Feature Engineering'],
                 'metrics' => [
                     ['label' => 'R² Score (Akurasi)', 'value' => '0.912 (91.2%)'],
