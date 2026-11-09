@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "framework": null,
+  "framework": "laravel",
+  "installCommand": "composer install --no-interaction --prefer-dist --no-progress && npm install",
+  "buildCommand": "npm run build",
   "outputDirectory": "public",
-  "buildCommand": null,
   "functions": {
     "api/index.php": {
       "runtime": "vercel-php@0.7.3",
@@ -34,7 +35,6 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-    "APP_KEY": "base64:0EemfraV1EUZ5VBMS1ZRBgfHUDn8CbzXiw3e791ATC8=",
     "LOG_CHANNEL": "stderr",
     "CACHE_DRIVER": "array",
     "SESSION_DRIVER": "cookie",
