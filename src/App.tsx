@@ -732,23 +732,64 @@ export default function App() {
             </section>
 
             {/* Running Skills Marquee Section */}
-            <section id="running-skills" className="py-12 bg-white/60 border-y border-rose-200/60 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-4 mb-6 text-center">
-                    <span className="text-xs font-mono uppercase tracking-wider text-rose-500 font-bold">Tech Stack & Tools Keahlian</span>
-                    <h2 className="text-2xl font-display font-bold text-slate-800 mt-1">Teknologi yang Dikuasai</h2>
+            <section id="running-skills" className="py-16 relative overflow-hidden bg-gradient-to-b from-pink-50/80 via-white/70 to-violet-50/70 border-y border-rose-200/70">
+                <div className="absolute -top-24 left-1/4 w-72 h-72 bg-rose-300/25 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute -bottom-28 right-1/4 w-80 h-80 bg-violet-300/25 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div className="max-w-7xl mx-auto px-4 mb-10 text-center relative z-10">
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-violet-100/70 border border-violet-200 text-violet-600 text-[11px] font-mono uppercase tracking-wider mb-3">
+                        <Sparkles className="w-3.5 h-3.5" />
+                        <span>Animated Tech Stream</span>
+                    </div>
+                    <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 tracking-tight">
+                        Skill &amp; Alat yang Sering Digunakan
+                    </h2>
+                    <p className="text-sm text-slate-500 mt-1.5">
+                        {runningSkills.length}+ teknologi · arahkan kursor ke kartu untuk menghentikan putaran
+                    </p>
                 </div>
 
-                <div className="relative w-full overflow-hidden marquee-track py-2">
-                    <div className="flex w-max marquee-content animate-marquee-left gap-6">
-                        {[...runningSkills, ...runningSkills].map((item, idx) => (
-                            <div key={idx} className="glass-card px-4 py-3 rounded-2xl flex items-center gap-3.5 border border-rose-200 shadow-xs shrink-0 hover:scale-105 hover:border-rose-400 hover:shadow-md transition-all bg-white/85 group">
-                                <div className="w-10 h-10 rounded-xl bg-white shadow-xs border border-rose-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform">
-                                    {item.icon}
-                                </div>
-                                <div>
-                                    <span className="font-bold text-slate-800 text-sm block leading-tight">{item.name}</span>
-                                    <span className="text-[11px] text-slate-500 font-medium">{item.desc}</span>
-                                </div>
+                {/* Gradient fade masks */}
+                <div className="absolute inset-y-0 left-0 w-16 sm:w-40 bg-gradient-to-r from-pink-50 via-pink-50/70 to-transparent z-10 pointer-events-none"></div>
+                <div className="absolute inset-y-0 right-0 w-16 sm:w-40 bg-gradient-to-l from-violet-50 via-violet-50/70 to-transparent z-10 pointer-events-none"></div>
+
+                {/* Row 1: marquee left */}
+                <div className="marquee-track flex overflow-hidden select-none py-2">
+                    <div className="marquee-content flex w-max animate-marquee-left">
+                        {[0, 1].map((group) => (
+                            <div key={group} className="flex gap-4 pr-4" aria-hidden={group === 1}>
+                                {runningSkills.map((item, idx) => (
+                                    <div key={idx} className="group flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/85 backdrop-blur-md border border-rose-200/70 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-rose-400/60 transition-all duration-300 shrink-0">
+                                        <div className="w-11 h-11 rounded-xl bg-white border border-rose-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300" style={{ boxShadow: `0 8px 20px -10px ${item.color}` }}>
+                                            {item.icon}
+                                        </div>
+                                        <div className="pr-1">
+                                            <span className="font-bold text-slate-800 text-sm block leading-tight whitespace-nowrap">{item.name}</span>
+                                            <span className="text-[11px] text-slate-500 font-medium whitespace-nowrap">{item.desc}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Row 2: marquee right */}
+                <div className="marquee-track flex overflow-hidden select-none py-2 mt-4">
+                    <div className="marquee-content flex w-max animate-marquee-right">
+                        {[0, 1].map((group) => (
+                            <div key={group} className="flex gap-4 pr-4" aria-hidden={group === 1}>
+                                {runningSkills.slice().reverse().map((item, idx) => (
+                                    <div key={idx} className="group flex items-center gap-3 px-4 py-3 rounded-2xl bg-white/85 backdrop-blur-md border border-rose-200/70 shadow-sm hover:shadow-lg hover:-translate-y-0.5 hover:border-violet-400/60 transition-all duration-300 shrink-0">
+                                        <div className="w-11 h-11 rounded-xl bg-white border border-rose-100 flex items-center justify-center p-2 shrink-0 group-hover:scale-110 transition-transform duration-300" style={{ boxShadow: `0 8px 20px -10px ${item.color}` }}>
+                                            {item.icon}
+                                        </div>
+                                        <div className="pr-1">
+                                            <span className="font-bold text-slate-800 text-sm block leading-tight whitespace-nowrap">{item.name}</span>
+                                            <span className="text-[11px] text-slate-500 font-medium whitespace-nowrap">{item.desc}</span>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         ))}
                     </div>
