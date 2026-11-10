@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+    h1, h2, h3, h4, h5, h6, .font-display {
+        font-family: 'Playfair Display', serif;
+    }
+    body {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 500;
+    }
+}
+
+@keyframes marqueeLeft {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+}
+
+.animate-marquee-left {
+    animation: marqueeLeft 35s linear infinite;
+}
+
+.animate-marquee-right {
+    animation: marqueeRight 35s linear infinite;
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.marquee-track:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(244, 114, 182, 0.22);
+    box-shadow: 0 8px 32px -12px rgba(236, 72, 153, 0.12);
+}
+
+.glass-card:hover {
+    border-color: rgba(196, 181, 253, 0.55);
+}
+
+.glow-effect {
+    box-shadow: 0 0 35px -5px rgba(244, 114, 182, 0.3);
+}
+
+.glow-avatar {
+    box-shadow: 0 0 45px -5px rgba(196, 181, 253, 0.55);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #fdf2f8;
+}
+::-webkit-scrollbar-thumb {
+    background: #f9a8d4;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #f472b6;
+}
