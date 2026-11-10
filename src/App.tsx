@@ -14,7 +14,7 @@ export default function App() {
         name: 'Vanesa Mardiana Putri',
         nickname: 'Vanesa',
         role: 'Backend-Focused Full-Stack Developer & UI/UX Designer',
-        subtitle: 'Laravel · Node.js · Express.js · Java · Flutter · Firebase · Power BI · MySQL · PostgreSQL',
+        subtitle: 'Laravel · Node.js · Express.js · Java · Flutter · Firebase · Power BI · Excel · MySQL · PostgreSQL',
         bio: 'Halo! Aku Vanesa Mardiana Putri, mahasiswi Politeknik Negeri Malang (POLINEMA) yang berfokus pada Backend Engineering dan arsitektur sistem web (Laravel, Node.js, Express.js, Java), mobile app (Flutter), cloud & basis data (Firebase, MySQL, PostgreSQL), analitik data (Power BI, Google Colab ML), serta UI/UX Design di Figma. Aktif sebagai pengurus HRD di Workshop Riset Informatika (WRI) dan Finalis Team Lead kompetisi web development.',
         avatar: '/images/avatar-vanesa.jpg',
         location: 'Indonesia',
@@ -661,6 +661,10 @@ export default function App() {
                         </h1>
 
                         <p className="text-lg sm:text-xl font-semibold text-slate-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: profile.role }}></p>
+
+                        <p className="text-xs sm:text-sm font-mono text-slate-500 tracking-wide leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            {profile.subtitle}
+                        </p>
 
                         <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
                             Mahasiswi <strong className="text-violet-700">Politeknik Negeri Malang (POLINEMA)</strong> yang berfokus pada arsitektur backend, manajemen database, dan eksplorasi Machine Learning prediktif.
