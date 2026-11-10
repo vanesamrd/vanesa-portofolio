@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { 
-    Code, Cpu, Wrench, Palette, Mail, ExternalLink, 
+    Code, Cpu, Wrench, Palette, Mail, ExternalLink, Github,
     ArrowRight, CheckCircle2, Sparkles, Send, User, Award, BookOpen, 
     Layers, Terminal, Database, X, Menu, Phone, MapPin, Heart, FileText, Download
 } from 'lucide-react';
