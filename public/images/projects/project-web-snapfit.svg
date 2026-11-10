@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSnap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F1E7"/>
+      <stop offset="55%" stop-color="#F3E7D7"/>
+      <stop offset="100%" stop-color="#EFE2D0"/>
+    </linearGradient>
+    <linearGradient id="batikA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B85C38"/>
+      <stop offset="100%" stop-color="#9E4B2E"/>
+    </linearGradient>
+    <linearGradient id="batikB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C9A45C"/>
+      <stop offset="100%" stop-color="#6F7D4C"/>
+    </linearGradient>
+    <linearGradient id="phoneBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F8F1E7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgSnap)"/>
+
+  <!-- Subtle batik ornaments -->
+  <g opacity="0.12" stroke="#B85C38" stroke-width="1.5" fill="none">
+    <circle cx="90" cy="70" r="26"/>
+    <circle cx="90" cy="70" r="12"/>
+    <circle cx="712" cy="380" r="34"/>
+    <circle cx="712" cy="380" r="16"/>
+    <path d="M 60 380 q 30 -30 60 0 q -30 30 -60 0z"/>
+    <path d="M 690 90 q 24 -24 48 0 q -24 24 -48 0z"/>
+  </g>
+
+  <!-- Main Browser Card -->
+  <rect x="40" y="25" width="720" height="400" rx="16" fill="#FFFDF9" stroke="#E8DCCB" stroke-width="1.5"/>
+
+  <!-- Top Bar -->
+  <rect x="40" y="25" width="720" height="52" rx="16" fill="#F8F1E7"/>
+  <rect x="40" y="61" width="720" height="16" fill="#F8F1E7"/>
+  <circle cx="64" cy="51" r="9" fill="#B85C38"/>
+  <text x="60" y="55" fill="#FFFFFF" font-size="9" font-weight="700" font-family="sans-serif">S</text>
+  <text x="80" y="56" fill="#2B1E16" font-size="17" font-weight="700" font-family="Georgia, serif">SnapFit</text>
+  <text x="196" y="55" fill="#6F6259" font-size="10.5" font-family="sans-serif">Marketplace</text>
+  <text x="270" y="55" fill="#2B1E16" font-size="10.5" font-weight="700" font-family="sans-serif">AI Studio</text>
+  <text x="332" y="55" fill="#6F6259" font-size="10.5" font-family="sans-serif">Co-Create</text>
+  <text x="398" y="55" fill="#6F6259" font-size="10.5" font-family="sans-serif">Try-On AR</text>
+  <rect x="620" y="39" width="76" height="24" rx="12" fill="#F8F1E7" stroke="#E8DCCB"/>
+  <text x="636" y="55" fill="#6F6259" font-size="9.5" font-weight="600" font-family="sans-serif">Masuk</text>
+  <rect x="702" y="39" width="40" height="24" rx="12" fill="#B85C38"/>
+  <text x="710" y="55" fill="#FFFFFF" font-size="9" font-weight="700" font-family="sans-serif">Daftar</text>
+  <line x1="40" y1="77" x2="760" y2="77" stroke="#E8DCCB" stroke-width="1"/>
+
+  <!-- Hero Left -->
+  <rect x="62" y="100" width="104" height="20" rx="10" fill="#EFE2D0"/>
+  <text x="74" y="114" fill="#9E4B2E" font-size="8.5" font-weight="700" font-family="sans-serif">INTERCOMP 2026</text>
+
+  <text x="62" y="148" fill="#2B1E16" font-size="23" font-weight="700" font-family="Georgia, serif">Revitalisasi Wastra</text>
+  <text x="62" y="176" fill="#2B1E16" font-size="23" font-weight="700" font-family="Georgia, serif">Nusantara dengan</text>
+  <text x="62" y="204" fill="#B85C38" font-size="23" font-weight="700" font-family="Georgia, serif">AI &amp; AR Try-On</text>
+
+  <text x="62" y="228" fill="#6F6259" font-size="9.5" font-family="sans-serif">Menghubungkan UMKM kreatif dengan desainer</text>
+  <text x="62" y="242" fill="#6F6259" font-size="9.5" font-family="sans-serif">profesional lewat teknologi immersive.</text>
+
+  <rect x="62" y="262" width="104" height="30" rx="9" fill="#B85C38"/>
+  <text x="82" y="281" fill="#FFFFFF" font-size="10" font-weight="700" font-family="sans-serif">Jelajahi Produk</text>
+  <rect x="174" y="262" width="104" height="30" rx="9" fill="#FFFFFF" stroke="#E8DCCB"/>
+  <text x="190" y="281" fill="#2B1E16" font-size="10" font-weight="700" font-family="sans-serif">Coba AR Try-On</text>
+
+  <!-- Feature pills -->
+  <g>
+    <rect x="62" y="312" width="100" height="26" rx="13" fill="#F8F1E7" stroke="#E8DCCB"/>
+    <text x="74" y="329" fill="#9E4B2E" font-size="8.5" font-weight="700" font-family="sans-serif">✨ AI Studio</text>
+    <rect x="170" y="312" width="92" height="26" rx="13" fill="#F8F1E7" stroke="#E8DCCB"/>
+    <text x="182" y="329" fill="#6F7D4C" font-size="8.5" font-weight="700" font-family="sans-serif">◈ AR Try-On</text>
+    <rect x="270" y="312" width="96" height="26" rx="13" fill="#F8F1E7" stroke="#E8DCCB"/>
+    <text x="282" y="329" fill="#C9A45C" font-size="8.5" font-weight="700" font-family="sans-serif">◉ Co-Create</text>
+  </g>
+
+  <!-- Phone Mockup (AR Try-On) -->
+  <g>
+    <rect x="390" y="96" width="150" height="288" rx="22" fill="#2B1E16"/>
+    <rect x="397" y="103" width="136" height="274" rx="17" fill="url(#phoneBg)"/>
+    <rect x="447" y="108" width="36" height="6" rx="3" fill="#2B1E16"/>
+
+    <!-- Product viewport -->
+    <rect x="407" y="124" width="116" height="150" rx="12" fill="#EFE2D0"/>
+    <rect x="417" y="134" width="96" height="130" rx="8" fill="url(#batikA)"/>
+    <g opacity="0.55" stroke="#F8F1E7" stroke-width="1.4" fill="none">
+      <path d="M 430 150 q 16 -16 32 0 q -16 16 -32 0z"/>
+      <path d="M 462 190 q 16 -16 32 0 q -16 16 -32 0z"/>
+      <path d="M 430 230 q 16 -16 32 0 q -16 16 -32 0z"/>
+      <circle cx="465" cy="150" r="7"/>
+      <circle cx="435" cy="200" r="7"/>
+    </g>
+    <rect x="470" y="140" width="34" height="16" rx="8" fill="#B85C38"/>
+    <text x="476" y="151" fill="#FFFFFF" font-size="7" font-weight="700" font-family="sans-serif">AR LIVE</text>
+
+    <text x="416" y="292" fill="#2B1E16" font-size="10.5" font-weight="700" font-family="sans-serif">Batik Megamendung</text>
+    <text x="416" y="306" fill="#6F6259" font-size="8" font-family="sans-serif">Pengrajin Malang · Premium</text>
+    <text x="416" y="324" fill="#B85C38" font-size="11" font-weight="700" font-family="sans-serif">Rp 285.000</text>
+    <rect x="416" y="336" width="98" height="24" rx="8" fill="#2B1E16"/>
+    <text x="436" y="352" fill="#FFFFFF" font-size="8.5" font-weight="700" font-family="sans-serif">Coba Virtual</text>
+    <circle cx="465" cy="372" r="3" fill="#C9A45C"/>
+  </g>
+
+  <!-- AI Product Studio Panel -->
+  <g>
+    <rect x="558" y="96" width="184" height="288" rx="14" fill="#F8F1E7" stroke="#E8DCCB"/>
+    <text x="572" y="118" fill="#2B1E16" font-size="11" font-weight="700" font-family="sans-serif">AI Product Studio</text>
+    <text x="572" y="132" fill="#6F6259" font-size="8" font-family="sans-serif">Foto produk otomatis</text>
+
+    <rect x="572" y="144" width="76" height="66" rx="8" fill="url(#batikA)"/>
+    <rect x="656" y="144" width="72" height="66" rx="8" fill="url(#batikB)"/>
+    <rect x="572" y="218" width="76" height="66" rx="8" fill="url(#batikB)"/>
+    <rect x="656" y="218" width="72" height="66" rx="8" fill="url(#batikA)"/>
+
+    <rect x="572" y="298" width="156" height="28" rx="8" fill="#FFFFFF" stroke="#E8DCCB"/>
+    <text x="584" y="316" fill="#6F6259" font-size="8.5" font-family="sans-serif">Generate variasi angle...</text>
+    <rect x="700" y="304" width="20" height="16" rx="5" fill="#B85C38"/>
+    <text x="704" y="315" fill="#FFFFFF" font-size="8" font-weight="700" font-family="sans-serif">✨</text>
+
+    <rect x="572" y="338" width="156" height="28" rx="8" fill="#2B1E16"/>
+    <text x="612" y="356" fill="#FFFFFF" font-size="8.5" font-weight="700" font-family="sans-serif">Render Foto Studio</text>
+  </g>
+
+  <!-- Footer strip -->
+  <rect x="40" y="397" width="720" height="28" rx="0" fill="#F8F1E7"/>
+  <rect x="40" y="411" width="720" height="14" rx="0" fill="#F8F1E7"/>
+  <text x="62" y="415" fill="#6F6259" font-size="8.5" font-family="sans-serif">UMKM Kreatif · Desainer · Buyer · Admin</text>
+  <text x="610" y="415" fill="#B85C38" font-size="8.5" font-weight="700" font-family="sans-serif">Laravel 13 · Vue 3 · Midtrans</text>
+</svg>

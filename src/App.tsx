@@ -408,6 +408,62 @@ export default function App() {
             demo_link: 'https://sigizi-olivia.vercel.app',
             featured: false,
         },
+        {
+            id: 'web-coffeespot-discovery',
+            title: 'CoffeSpot - Platform Rekomendasi & Discovery Cafe',
+            category: 'Web Development',
+            category_slug: 'web-development',
+            badge: 'Laravel 10 · Map & Multi-language',
+            short_desc: 'Platform discovery cafe berbasis lokasi: jelajah cafe populer & terdekat, pencarian dan filter rating, detail menu/fasilitas, ulasan dengan foto, favorit, serta dashboard owner dan admin.',
+            full_desc: 'CoffeSpot adalah platform web rekomendasi dan penemuan cafe yang dibangun dengan Laravel 10, Blade, Tailwind CSS, dan Alpine.js. Menyediakan pencarian serta filter cafe (rating, popularitas, terbaru, terdekat), halaman detail cafe dengan galeri foto, jam operasional, peta Leaflet + OpenStreetMap, ulasan dan balasan owner, sistem favorit, multi-bahasa (Indonesia/English), serta tiga level peran: user, owner, dan admin. Owner dapat mengelola data cafe dan membalas ulasan, sedangkan admin memoderasi cafe, ulasan yang dilaporkan, dan pengguna. Dilengkapi autentikasi Breeze, verifikasi email, dan reset password via OTP email.',
+            image: '/images/projects/project-web-coffeespot.svg',
+            tags: ['Laravel 10', 'PHP 8.1', 'Tailwind CSS', 'Alpine.js', 'MySQL', 'Blade', 'Leaflet.js', 'OpenStreetMap'],
+            metrics: [
+                { label: 'Role Pengguna', value: 'User · Owner · Admin' },
+                { label: 'Pencarian & Filter', value: 'Rating · Popular · Nearby' },
+                { label: 'Peta Interaktif', value: 'Leaflet + OSM' },
+                { label: 'Bahasa', value: 'Indonesia & English' },
+            ],
+            highlights: [
+                'Discovery cafe dengan pencarian nama/lokasi serta filter rating, popularitas, terbaru, dan terdekat.',
+                'Halaman detail cafe: galeri foto, jam operasional, alamat, peta Leaflet + OpenStreetMap, dan ulasan pengguna.',
+                'Sistem ulasan dengan rating, foto, laporan ulasan, serta balasan resmi dari owner cafe.',
+                'Dashboard owner untuk membuat/mengedit cafe, mengelola foto, dan membalas ulasan pelanggan.',
+                'Panel admin untuk moderasi cafe, verifikasi approval, penanganan ulasan terlapor, dan manajemen pengguna.',
+                'Autentikasi Breeze, verifikasi email, reset password via OTP email, dan dukungan multi-bahasa (ID/EN).',
+            ],
+            repo_link: 'https://github.com/vanesamrd/pbl-3',
+            demo_link: null,
+            featured: false,
+        },
+        {
+            id: 'web-snapfit-wastra',
+            title: 'SnapFit - Platform Kolaborasi UMKM & Desainer dengan AI & AR',
+            category: 'Web Development',
+            category_slug: 'web-development',
+            badge: 'Laravel 13 · Vue 3 · Inertia',
+            short_desc: 'Platform ekonomi kreatif yang menghubungkan UMKM wastra Nusantara dengan desainer: AI Product Studio, Web AR Virtual Try-On, Co-Create Room realtime, marketplace, dan pembayaran online.',
+            full_desc: 'SnapFit adalah platform web untuk memberdayakan UMKM kreatif (batik, tenun, kerajinan) dengan menghubungkan mereka ke desainer profesional. Dibangun dengan Laravel 13, Vue 3 + Inertia.js, Tailwind CSS, dan MySQL. Fitur inovasi utamanya: AI Product Studio untuk menghasilkan foto produk studio dan variasi angle otomatis, Web AR Virtual Try-On untuk mencoba busana secara virtual langsung di browser, serta Realtime Co-Create Room untuk kolaborasi desain antara UMKM dan desainer. Dilengkapi marketplace, keranjang/wishlist, checkout via Midtrans, notifikasi, analitik, serta dashboard multi-role (UMKM, Desainer, Buyer, Admin). Autentikasi menggunakan Laravel Sanctum, Spatie Permission, dan Google OAuth 2.0. Proyek ini dikembangkan untuk kompetisi INTERCOMP 2026 JTI POLINEMA.',
+            image: '/images/projects/project-web-snapfit.svg',
+            tags: ['Laravel 13', 'Vue 3', 'Inertia.js', 'Tailwind CSS', 'MySQL', 'Midtrans', 'Sanctum', 'Google OAuth'],
+            metrics: [
+                { label: 'Role Pengguna', value: 'UMKM · Desainer · Buyer · Admin' },
+                { label: 'Inovasi Inti', value: 'AI · AR · Co-Create' },
+                { label: 'Pembayaran', value: 'Midtrans' },
+                { label: 'Kompetisi', value: 'INTERCOMP 2026' },
+            ],
+            highlights: [
+                'AI Product Studio: mengubah foto produk biasa menjadi foto studio profesional, variasi angle, dan caption marketing otomatis.',
+                'Web AR Virtual Try-On: pembeli dapat mencoba busana secara virtual langsung dari browser/kamera HP tanpa install aplikasi.',
+                'Realtime Co-Create Room: kolaborasi desain antara UMKM dan desainer, terinspirasi alur kerja Figma untuk produk fisik.',
+                'Marketplace wastra Nusantara dengan keranjang, wishlist, checkout Midtrans, dan riwayat pesanan.',
+                'Dashboard multi-role: UMKM (studio, produk, pesanan, analitik), Desainer (portofolio, kolaborasi), Buyer, dan Admin (moderasi & analitik global).',
+                'Autentikasi Sanctum + Spatie Permission + Google OAuth 2.0 dengan UI premium bernuansa heritage Nusantara.',
+            ],
+            repo_link: 'https://github.com/Adidtiasmara/SnapFit',
+            demo_link: null,
+            featured: true,
+        },
 
         {
             id: 'uiux-skinmate-app',
@@ -818,9 +874,9 @@ export default function App() {
                 {/* Category Filter Tabs */}
                 <div className="flex flex-wrap justify-center gap-3 mb-12">
                     {[
-                        { slug: 'all', label: 'Semua Proyek (6)' },
+                        { slug: 'all', label: 'Semua Proyek (8)' },
                         { slug: 'machine-learning', label: 'Machine Learning (1)' },
-                        { slug: 'web-development', label: 'Web Development (2)' },
+                        { slug: 'web-development', label: 'Web Development (4)' },
                         { slug: 'ui-ux', label: 'UI/UX Design (3)' },
                     ].map(tab => (
                         <button
